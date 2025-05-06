@@ -1,1 +1,92 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahana Hariharan</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(to bottom, #001f3f, #0074D9);
+    }
+
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      top: 30%;
+      color: white;
+      text-shadow: 0 0 10px #000;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .floating {
+      position: absolute;
+      width: 50px;
+      transition: transform 0.3s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="waveCanvas"></canvas>
+  <div class="content">
+    <h1>Welcome to Sahana Hariharan's Personal Website</h1>
+    <p>Explore the tides of identity and heritage</p>
+  </div>
+  <img src="https://i.imgur.com/D0F6sXr.png" class="floating" id="lotus" style="top: 60%; left: 20%;" />
+  <img src="https://i.imgur.com/zWrz1HP.png" class="floating" id="shell" style="top: 50%; left: 70%;" />
+
+  <script>
+    // Interactive floating motion
+    document.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 20;
+      const y = (e.clientY / window.innerHeight - 0.5) * 20;
+      document.querySelectorAll('.floating').forEach(el => {
+        el.style.transform = `translate(${x}px, ${y}px)`;
+      });
+    });
+
+    // Animated waves using canvas
+    const canvas = document.getElementById('waveCanvas');
+    const ctx = canvas.getContext('2d');
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    });
+
+    let t = 0;
+    function draw() {
+      ctx.clearRect(0, 0, width, height);
+      for (let i = 0; i < 3; i++) {
+        ctx.beginPath();
+        for (let x = 0; x < width; x++) {
+          const y = height * 0.5 + Math.sin(x * 0.01 + t + i) * 20;
+          ctx.lineTo(x, y);
+        }
+        ctx.strokeStyle = `rgba(255, 255, 255, ${0.05 + i * 0.05})`;
+        ctx.stroke();
+      }
+      t += 0.02;
+      requestAnimationFrame(draw);
+    }
+    draw();
+  </script>
+</body>
+</html>
