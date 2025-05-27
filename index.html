@@ -3,29 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sahana's Sea & Soul</title>
+  <title>Sahana Hariharan</title>
   <style>
-    body, html {
+    html, body {
       margin: 0;
       padding: 0;
-      width: 100%;
       height: 100%;
-      overflow: hidden;
       font-family: 'Courier New', monospace;
-      background: linear-gradient(to top, #001219, #005f73);
+      scroll-behavior: smooth;
+      background: #f9f7f3;
     }
 
-    #hero {
-      position: absolute;
+    section {
+      position: relative;
+      height: 100vh;
       width: 100%;
-      height: 100%;
+      background-size: cover;
+      background-position: center;
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
-      color: #e0fbfc;
-      z-index: 2;
       text-align: center;
+    }
+
+    #section1 {
+      background-image: url('beach_image.jpg');
+      background-attachment: fixed;
+    }
+
+    #section1 h1, #section1 p {
+      color: white;
+      text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    #section2 {
+      background-color: #e3b48a;
     }
 
     h1 {
@@ -36,98 +48,22 @@
     p {
       font-size: 1.3rem;
       margin-top: 10px;
-      color: #caf0f8;
-    }
-
-    canvas {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-    }
-
-    #sand {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 200px;
-      background: linear-gradient(to top, #f5e6ca, #f9f7f3);
-      z-index: 3;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    #sand::before {
-      content: '';
-      background: url('https://i.imgur.com/9t8yRRU.png') center center no-repeat;
-      background-size: 120px 120px;
-      opacity: 0.3;
-      position: absolute;
-      width: 120px;
-      height: 120px;
     }
   </style>
 </head>
 <body>
-  <div id="hero">
-    <h1>Sahana's Sea & Soul</h1>
-    <p>South Indian roots meet oceanic vibes</p>
-  </div>
+  <section id="section1">
+    <div>
+      <h1>Sahana Hariharan</h1>
+      <p>tex</p>
+    </div>
+  </section>
 
-  <canvas id="bubbles"></canvas>
-  <div id="sand"></div>
-
-  <script>
-    const canvas = document.getElementById('bubbles');
-    const ctx = canvas.getContext('2d');
-    let w = canvas.width = window.innerWidth;
-    let h = canvas.height = window.innerHeight;
-
-    const bubbles = [];
-    for (let i = 0; i < 80; i++) {
-      bubbles.push({
-        x: Math.random() * w,
-        y: Math.random() * h,
-        r: Math.random() * 8 + 2,
-        d: Math.random() * 2 + 1
-      });
-    }
-
-    function draw() {
-      ctx.clearRect(0, 0, w, h);
-      ctx.fillStyle = 'rgba(173, 232, 244, 0.6)';
-      ctx.beginPath();
-      for (let i = 0; i < bubbles.length; i++) {
-        const b = bubbles[i];
-        ctx.moveTo(b.x, b.y);
-        ctx.arc(b.x, b.y, b.r, 0, Math.PI * 2);
-      }
-      ctx.fill();
-      update();
-    }
-
-    function update() {
-      for (let i = 0; i < bubbles.length; i++) {
-        const b = bubbles[i];
-        b.y -= b.d;
-        if (b.y < -b.r) {
-          b.y = h + b.r;
-          b.x = Math.random() * w;
-        }
-      }
-    }
-
-    function animate() {
-      draw();
-      requestAnimationFrame(animate);
-    }
-
-    animate();
-    window.addEventListener('resize', () => {
-      w = canvas.width = window.innerWidth;
-      h = canvas.height = window.innerHeight;
-    });
-  </script>
+  <section id="section2">
+    <div>
+      <h1>Next Chapter</h1>
+      <p>More coming soon...</p>
+    </div>
+  </section>
 </body>
 </html>
