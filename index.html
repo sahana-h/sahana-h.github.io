@@ -4,66 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sahana Hariharan</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Courier New', monospace;
-      scroll-behavior: smooth;
-      background: #f9f7f3;
-    }
-
-    section {
-      position: relative;
-      height: 100vh;
-      width: 100%;
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    #section1 {
-      background-image: url('beach_image.jpg');
-      background-attachment: fixed;
-    }
-
-    #section1 h1, #section1 p {
-      color: white;
-      text-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-
-    #section2 {
-      background-color: #e3b48a;
-    }
-
-    h1 {
-      font-size: 3.5rem;
-      margin: 0;
-    }
-
-    p {
-      font-size: 1.3rem;
-      margin-top: 10px;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <section id="section1">
-    <div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
       <h1>Sahana Hariharan</h1>
-      <p>tex</p>
+      <p>CS + Statistics</p>
     </div>
-  </section>
 
-  <section id="section2">
-    <div>
-      <h1>Next Chapter</h1>
-      <p>More coming soon...</p>
+
+    <div class="decorations">
+      <img src="whale.svg" class="whale" alt="Whale" />
+      <!-- <img src="coral.svg" class="coral" alt="Coral" /> -->
+      <img src="fish_1.svg" class="fish1" alt="Fish1" />
+      <img src="fish_1.svg" class="fish2" alt="Fish2" />
+      <img src="fish_1.svg" class="fish3" alt="Fish3" />
+      <img src="fish_1.svg" class="fish4" alt="Fish4"/> 
     </div>
-  </section>
+
+    
+  </header>
+  <div class="bubbles">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+  </div>
 </body>
 </html>
