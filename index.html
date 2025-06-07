@@ -4,44 +4,153 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sahana Hariharan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <header class="hero-section">
+    <div class="ocean-background">
+      <div class="jellyfish-anim jellyfish-lottie" style="left: 5vw; bottom: -60px;">
+        <lottie-player
+          src="jellyfish.json"
+          background="transparent"
+          speed="1"
+          style="width: 120px; height: 120px;"
+          loop
+          autoplay>
+        </lottie-player>
+      </div>
+      <div class="jellyfish-anim jellyfish-lottie2" style="left: 20vw; bottom: 10vh;">
+        <lottie-player
+          src="jellyfish.json"
+          background="transparent"
+          speed="0.8"
+          style="width: 80px; height: 80px;"
+          loop
+          autoplay>
+        </lottie-player>
+      </div>
+      <div class="jellyfish-anim jellyfish-lottie3" style="left: 60vw; bottom: 20vh;">
+        <lottie-player
+          src="jellyfish.json"
+          background="transparent"
+          speed="1.2"
+          style="width: 100px; height: 100px;"
+          loop
+          autoplay>
+        </lottie-player>
+      </div>
+      <div class="jellyfish-anim jellyfish-lottie4" style="left: 80vw; bottom: 5vh;">
+        <lottie-player
+          src="jellyfish.json"
+          background="transparent"
+          speed="0.9"
+          style="width: 60px; height: 60px;"
+          loop
+          autoplay>
+        </lottie-player>
+      </div>
+      <div class="jellyfish-anim jellyfish-lottie5" style="left: 35vw; bottom: 30vh;">
+        <lottie-player
+          src="jellyfish.json"
+          background="transparent"
+          speed="1.1"
+          style="width: 90px; height: 90px;"
+          loop
+          autoplay>
+        </lottie-player>
+      </div>
+      <div class="jellyfish-anim jellyfish-lottie6" style="left: 70vw; bottom: 40vh;">
+        <lottie-player
+          src="jellyfish.json"
+          background="transparent"
+          speed="0.7"
+          style="width: 70px; height: 70px;"
+          loop
+          autoplay>
+        </lottie-player>
+      </div>
+      <div class="ocean-particles"></div>
+    </div>
+
+    <nav class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
-    <div class="hero">
-      <h1>Sahana Hariharan</h1>
-      <p>CS + Statistics</p>
+
+    <div class="hero-content">
+      <div class="name-container">
+        <h1 class="glitch" data-text="Sahana Hariharan">Sahana Hariharan</h1>
+        <div class="subtitle-wrapper">
+          <p class="subtitle">CS + Statistics</p>
+          <div class="typing-cursor"></div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll to explore</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
     </div>
-
-
-    <div class="decorations">
-      <img src="whale.svg" class="whale" alt="Whale" />
-      <!-- <img src="coral.svg" class="coral" alt="Coral" /> -->
-      <img src="fish_1.svg" class="fish1" alt="Fish1" />
-      <img src="fish_1.svg" class="fish2" alt="Fish2" />
-      <img src="fish_1.svg" class="fish3" alt="Fish3" />
-      <img src="fish_1.svg" class="fish4" alt="Fish4"/> 
-    </div>
-
-    
   </header>
-  <div class="bubbles">
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-  </div>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Im a passionate computer science and statistics student with a love for data-driven solutions and creative problem-solving.</p>
+          <div class="skills">
+            <span class="skill-tag" data-skill="Python">Python</span>
+            <span class="skill-tag" data-skill="JavaScript">JavaScript</span>
+            <span class="skill-tag" data-skill="Data Analysis">Data Analysis</span>
+            <span class="skill-tag" data-skill="Machine Learning">Machine Learning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card" data-tilt>
+          <div class="project-content">
+            <h3>Project 1</h3>
+            <p>Description of your amazing project</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-content">
+        <div class="social-links">
+          <a href="#" class="social-link" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="social-link" data-tooltip="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
