@@ -113,18 +113,18 @@ VanillaTilt.init(document.querySelectorAll(".project-card"), {
 });
 
 // Typing effect for subtitle
-const subtitle = document.querySelector('.subtitle');
-const text = subtitle.textContent;
-subtitle.textContent = '';
-let i = 0;
+// const subtitle = document.querySelector('.subtitle');
+// const text = subtitle.textContent;
+// subtitle.textContent = '';
+// let i = 0;
 
-function typeWriter() {
-  if (i < text.length) {
-    subtitle.textContent += text.charAt(i);
-    i++;
-    setTimeout(typeWriter, 100);
-  }
-}
+// function typeWriter() {
+//   if (i < text.length) {
+//     subtitle.textContent += text.charAt(i);
+//     i++;
+//     setTimeout(typeWriter, 100);
+//   }
+// }
 
 // Start typing effect when page loads
-window.addEventListener('load', typeWriter); 
+// window.addEventListener('load', typeWriter);
