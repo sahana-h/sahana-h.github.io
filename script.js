@@ -128,3 +128,84 @@ VanillaTilt.init(document.querySelectorAll(".project-card"), {
 
 // Start typing effect when page loads
 // window.addEventListener('load', typeWriter);
+
+// Carousel for About section collage
+const carouselImages = [
+  'https://placehold.co/480x320?text=Pic+1',
+  'https://placehold.co/480x320?text=Pic+2',
+  'https://placehold.co/480x320?text=Pic+3'
+];
+const carouselImg = document.querySelector('.carousel-image');
+const leftBtn = document.querySelector('.carousel-btn-left');
+const rightBtn = document.querySelector('.carousel-btn-right');
+const dots = document.querySelectorAll('.carousel-dot');
+let carouselIndex = 0;
+
+function updateCarousel(idx) {
+  carouselImg.src = carouselImages[idx];
+  dots.forEach((dot, i) => {
+    dot.style.opacity = i === idx ? '0.7' : '0.4';
+    dot.style.background = i === idx ? '#ffd700' : '#fff';
+  });
+}
+if (carouselImg && leftBtn && rightBtn && dots.length) {
+  leftBtn.addEventListener('click', () => {
+    carouselIndex = (carouselIndex - 1 + carouselImages.length) % carouselImages.length;
+    updateCarousel(carouselIndex);
+  });
+  rightBtn.addEventListener('click', () => {
+    carouselIndex = (carouselIndex + 1) % carouselImages.length;
+    updateCarousel(carouselIndex);
+  });
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      carouselIndex = i;
+      updateCarousel(carouselIndex);
+    });
+  });
+  updateCarousel(carouselIndex);
+}
+
+// Coverflow carousel for About section
+const coverflowImages = [
+  'carousel_pics/FCE1CB50-4F8D-4036-8F63-1B8483CDDE5B.JPG',
+  'carousel_pics/E2D61178-3749-4BE0-81C8-18027BC3CDBA.JPG',
+  'carousel_pics/CB9EFF0F-7040-42DB-AF7D-2155198D5378.JPG',
+  'carousel_pics/A0D4C23F-D42C-4060-815B-E2A1025E586B.JPG',
+  'carousel_pics/69F88BF5-29ED-4A5C-A2F8-E61E4D578A42.JPG',
+  'carousel_pics/6DA8F169-99BC-454F-A92E-A69FFD12D35F.JPG'
+  // 'carousel_pics/IMG_9278.HEIC' is omitted for browser compatibility
+];
+const coverflowCenter = document.querySelector('.coverflow-img-center');
+const coverflowLeft = document.querySelector('.coverflow-img-left');
+const coverflowRight = document.querySelector('.coverflow-img-right');
+const coverflowFarLeft = document.querySelector('.coverflow-img-farleft');
+const coverflowFarRight = document.querySelector('.coverflow-img-farright');
+const coverflowBtnLeft = document.querySelector('.coverflow-btn-left');
+const coverflowBtnRight = document.querySelector('.coverflow-btn-right');
+let coverflowIndex = 0;
+
+function updateCoverflow(idx) {
+  const total = coverflowImages.length;
+  coverflowFarLeft.src = coverflowImages[(idx - 2 + total) % total];
+  coverflowLeft.src = coverflowImages[(idx - 1 + total) % total];
+  coverflowCenter.src = coverflowImages[idx % total];
+  coverflowRight.src = coverflowImages[(idx + 1) % total];
+  coverflowFarRight.src = coverflowImages[(idx + 2) % total];
+}
+if (coverflowCenter && coverflowLeft && coverflowRight && coverflowFarLeft && coverflowFarRight && coverflowBtnLeft && coverflowBtnRight) {
+  coverflowBtnLeft.addEventListener('click', () => {
+    coverflowIndex = (coverflowIndex - 1 + coverflowImages.length) % coverflowImages.length;
+    updateCoverflow(coverflowIndex);
+  });
+  coverflowBtnRight.addEventListener('click', () => {
+    coverflowIndex = (coverflowIndex + 1) % coverflowImages.length;
+    updateCoverflow(coverflowIndex);
+  });
+  // Auto-advance every 3 seconds
+  setInterval(() => {
+    coverflowIndex = (coverflowIndex + 1) % coverflowImages.length;
+    updateCoverflow(coverflowIndex);
+  }, 3000);
+  updateCoverflow(coverflowIndex);
+}

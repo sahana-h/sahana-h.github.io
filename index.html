@@ -81,6 +81,7 @@
       <ul class="nav-links">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
@@ -107,12 +108,23 @@
       <h2 class="section-title">About Me</h2>
       <div class="about-content" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 2rem; flex-direction: row;">
         <div class="profile-image profile-image-rect">
-          <img src="Sahana_Salesforce_Pic.JPG" alt="Sahana Hariharan" />
+          <img src="Sahana_Salesforce_Pic.JPG" alt="Sahana Hariharan" style="width: 100%; height: 100%; object-fit: cover; object-position: center 40%; border-radius: 12px;" />
         </div>
         <div class="about-text" style="flex: 2; min-width: 250px;">
-          <p>Hello! I'm Sahana, a Computer Science and Statistics student at the University of Illinois at Urbana-Champaign. I'm passionate about leveraging technology and data to solve complex problems and drive innovation. My interests include machine learning, software engineering, data analytics, and business, and I enjoy working on projects that combine these areas to create meaningful insights and solutions. 
-            Outside of my professional interests, I also love trying new foods, going on hikes, curating my Pinterest boards, and cheffing it up with my friends! 
+          <p class="about-text" style="font-size: 1.0rem; line-height: 1.6; color: #fffcfc; margin-bottom: 2rem;">Hello! I'm Sahana, a Computer Science and Statistics student at the University of Illinois at Urbana-Champaign. I'm passionate about leveraging technology and data to solve complex problems and drive innovation. My interests include machine learning, software engineering, data analytics, and business, and I enjoy working on projects that combine these areas to create meaningful insights and solutions. 
+            I love trying new foods, going on hikes, curating my Pinterest boards, and cheffing it up with my friends! 
           </p>
+          <div class="about-collage-carousel" style="margin: 2rem auto 0 auto; max-width: 480px; text-align: center;">
+            <div class="coverflow-carousel" style="position: relative; width: 100%; max-width: 1200px; height: 200px; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+              <img class="coverflow-img coverflow-img-farleft" src="https://placehold.co/110x110?text=Pic+0" alt="Far Left Pic" style="position: absolute; left: -120px; top: 50px; width: 120px; height: 120px; object-fit: cover; border-radius: 12px; opacity: 0.25; z-index: 0; transform: scale(1); transition: all 0.5s;" />
+              <img class="coverflow-img coverflow-img-left" src="https://placehold.co/150x130?text=Pic+3" alt="Left Pic" style="position: absolute; left: 340px; top: 30px; width: 170px; height: 140px; object-fit: cover; border-radius: 14px; opacity: 0.6; z-index: 1; transform: scale(1.05); transition: all 0.5s;" />
+              <img class="coverflow-img coverflow-img-center" src="https://placehold.co/240x160?text=Pic+1" alt="Center Pic" style="position: absolute; left: 50%; top: 10px; width: 250px; height: 180px; object-fit: cover; border-radius: 16px; z-index: 2; transform: translateX(-50%) scale(1.13); box-shadow: 0 8px 32px rgba(0,0,0,0.18); transition: all 0.5s;" />
+              <img class="coverflow-img coverflow-img-right" src="https://placehold.co/150x130?text=Pic+2" alt="Right Pic" style="position: absolute; right: 340px; top: 30px; width: 170px; height: 140px; object-fit: cover; border-radius: 14px; opacity: 0.6; z-index: 1; transform: scale(1.05); transition: all 0.5s;" />
+              <img class="coverflow-img coverflow-img-farright" src="https://placehold.co/110x110?text=Pic+4" alt="Far Right Pic" style="position: absolute; right: -120px; top: 50px; width: 120px; height: 120px; object-fit: cover; border-radius: 12px; opacity: 0.25; z-index: 0; transform: scale(1); transition: all 0.5s;" />
+              <button class="coverflow-btn coverflow-btn-left" style="position:absolute;top:50%;left:0;transform:translateY(-50%);background:rgba(0,0,0,0.3);border:none;color:#fff;font-size:1.5rem;border-radius:50%;width:32px;height:32px;cursor:pointer;z-index:3;">&#8592;</button>
+              <button class="coverflow-btn coverflow-btn-right" style="position:absolute;top:50%;right:0;transform:translateY(-50%);background:rgba(0,0,0,0.3);border:none;color:#fff;font-size:1.5rem;border-radius:50%;width:32px;height:32px;cursor:pointer;z-index:3;">&#8594;</button>
+            </div>
+          </div>
         </div>
       </div>
       <div class="skills-bar skills-bar-horizontal">
