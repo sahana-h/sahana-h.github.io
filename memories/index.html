@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>memories 🌱</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <script type="module" crossorigin src="/memories/assets/index-9xbHmK77.js"></script>
+  <link rel="stylesheet" crossorigin href="/memories/assets/index-BqeSRRO6.css">
+</head>
+<body>
+
+  <!-- LOGIN -->
+  <div id="login-screen" class="screen hidden">
+    <div class="card login-card">
+      <span class="login-emoji">🌱</span>
+      <h1 class="login-title">for you</h1>
+      <p class="login-subtitle">a little garden, just for us</p>
+      <div class="input-wrapper">
+        <input
+          type="password"
+          id="password-input"
+          placeholder="enter our little secret..."
+          autocomplete="off"
+        />
+      </div>
+      <button id="login-btn" class="btn-primary">enter ♡</button>
+      <p id="login-error" class="error-msg hidden">try again, love</p>
+    </div>
+  </div>
+
+  <!-- GARDEN -->
+  <div id="garden-screen" class="screen hidden">
+    <button id="letters-btn" class="letters-btn">
+      letters 💌
+      <span id="letters-badge" class="badge hidden">1</span>
+    </button>
+
+    <div class="card garden-card">
+      <h2 class="garden-title">our little garden</h2>
+
+      <div id="garden-area" class="garden-area">
+        <div id="plant-container" class="plant-container"></div>
+      </div>
+
+      <div class="progress-section">
+        <div class="progress-labels">
+          <span class="progress-label">growth</span>
+          <span id="progress-pct" class="progress-pct">0%</span>
+        </div>
+        <div class="progress-track">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+      </div>
+
+      <p id="water-msg" class="water-msg hidden"></p>
+      <button id="water-btn" class="btn-water">water 💧</button>
+    </div>
+  </div>
+
+  <!-- LETTERS LIST -->
+  <div id="letters-screen" class="screen hidden">
+    <div class="letters-header">
+      <button id="back-btn" class="back-btn">← back to garden</button>
+      <h2 class="letters-title">letters ♡</h2>
+      <p class="letters-subtitle">each bloom unlocks a new one</p>
+    </div>
+    <div id="letters-list" class="letters-list"></div>
+  </div>
+
+  <!-- LETTER DETAIL -->
+  <div id="letter-screen" class="screen hidden">
+    <div class="letter-detail">
+      <button id="close-letter-btn" class="back-btn">← back to letters</button>
+      <div class="letter-paper">
+        <p id="letter-date" class="letter-date"></p>
+        <h2 id="letter-title" class="letter-heading"></h2>
+        <div id="letter-body" class="letter-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOADING -->
+  <div id="loading-screen" class="screen">
+    <div id="app-loading">
+      <div class="loading-spinner"></div>
+      <p>loading your garden...</p>
+    </div>
+  </div>
+
+</body>
+</html>
