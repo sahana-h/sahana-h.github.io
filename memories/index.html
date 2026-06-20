@@ -7,8 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
-  <script type="module" crossorigin src="/memories/assets/index-9xbHmK77.js"></script>
-  <link rel="stylesheet" crossorigin href="/memories/assets/index-BqeSRRO6.css">
+  <script type="module" crossorigin src="/memories/assets/index-GbIR9Y3k.js"></script>
+  <link rel="stylesheet" crossorigin href="/memories/assets/index-BaEvpygr.css">
 </head>
 <body>
 
@@ -39,7 +39,14 @@
     </button>
 
     <div class="card garden-card">
-      <h2 class="garden-title">our garden</h2>
+
+      <!-- Past blooms — the actual garden -->
+      <div class="past-garden">
+        <span class="past-garden-label">our garden</span>
+        <div id="past-blooms" class="past-blooms"></div>
+      </div>
+
+      <div class="garden-divider"></div>
 
       <div id="garden-area" class="garden-area">
         <div id="plant-container" class="plant-container"></div>
@@ -86,7 +93,7 @@
   <div id="loading-screen" class="screen">
     <div id="app-loading">
       <div class="loading-spinner"></div>
-      <p>loading your garden...</p>
+      <p>loading our garden...</p>
     </div>
   </div>
 
