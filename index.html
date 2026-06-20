@@ -9,301 +9,66 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="cursor"></div>
-  <div class="cursor-follower"></div>
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">SH</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link active">About</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="hobbies.html" class="nav-link">Hobbies</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
 
-  <header class="hero-section">
-    <div class="ocean-background">
-      <div class="jellyfish-anim jellyfish-lottie" style="left: 5vw; bottom: -60px;">
-        <lottie-player
-          src="jellyfish.json"
-          background="transparent"
-          speed="1"
-          style="width: 180px; height: 180px;"
-          loop
-          autoplay>
-        </lottie-player>
-      </div>
-      <div class="jellyfish-anim jellyfish-lottie2" style="left: 20vw; bottom: 10vh;">
-        <lottie-player
-          src="jellyfish.json"
-          background="transparent"
-          speed="0.8"
-          style="width: 140px; height: 140px;"
-          loop
-          autoplay>
-        </lottie-player>
-      </div>
-      <div class="jellyfish-anim jellyfish-lottie3" style="left: 60vw; bottom: 20vh;">
-        <lottie-player
-          src="jellyfish.json"
-          background="transparent"
-          speed="1.2"
-          style="width: 220px; height: 220px;"
-          loop
-          autoplay>
-        </lottie-player>
-      </div>
-      <div class="jellyfish-anim jellyfish-lottie4" style="left: 80vw; bottom: 5vh;">
-        <lottie-player
-          src="jellyfish.json"
-          background="transparent"
-          speed="0.9"
-          style="width: 120px; height: 120px;"
-          loop
-          autoplay>
-        </lottie-player>
-      </div>
-      <div class="jellyfish-anim jellyfish-lottie5" style="left: 35vw; bottom: 30vh;">
-        <lottie-player
-          src="jellyfish.json"
-          background="transparent"
-          speed="1.1"
-          style="width: 200px; height: 200px;"
-          loop
-          autoplay>
-        </lottie-player>
-      </div>
-      <div class="jellyfish-anim jellyfish-lottie6" style="left: 70vw; bottom: 40vh;">
-        <lottie-player
-          src="jellyfish.json"
-          background="transparent"
-          speed="0.7"
-          style="width: 250px; height: 250px;"
-          loop
-          autoplay>
-        </lottie-player>
-      </div>
-      <div class="ocean-particles"></div>
-    </div>
-
-    <nav class="nav-container">
-      <ul class="nav-links">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="hero-content">
-      <h1 class="hero-name">Sahana Hariharan</h1>
-      <div class="hero-subtitle">Software Engineering Intern @ Google</div>
-      <div class="hero-links">
-        <a href="Sahana_Hariharan_Resume.pdf" class="hero-link" target="_blank" title="Download Resume"><i class="fas fa-file-download"></i></a>
-        <a href="https://www.linkedin.com/in/sahana-hariharan" class="hero-link" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/sahana-h" class="hero-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      </div>
-      <div class="scroll-indicator">
-        <a href="#about" class="scroll-link">
-          <span>Scroll to explore</span>
-          <i class="fas fa-chevron-down"></i>
-        </a>
+  <section class="intro-section">
+    <div class="intro-grid">
+      <img src="Sahana_Salesforce_Pic.JPG" alt="Sahana Hariharan" class="intro-photo" />
+      <div class="intro-text">
+        <h1 class="intro-name">Sahana Hariharan</h1>
+        <div class="hero-divider"></div>
+        <p class="intro-subtitle">Software Engineering Intern @ Google</p>
+        <div class="intro-icons">
+          <a href="Sahana_Hariharan_Resume.pdf" class="hero-icon" target="_blank" title="Resume"><i class="fas fa-file-download"></i></a>
+          <a href="https://www.linkedin.com/in/sahana-hariharan" class="hero-icon" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/sahana-h" class="hero-icon" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="about-bio">Hello! I'm Sahana, a Computer Science and Statistics student at the University of Illinois at Urbana-Champaign. I'm passionate about leveraging technology and data to solve complex problems and drive innovation. My interests include machine learning, software engineering, data analytics, and business, and I enjoy working on projects that combine these areas.
+          <br><br>
+          I love trying new foods, going on hikes, curating my Pinterest boards, and cheffing it up with my friends!
+        </p>
       </div>
     </div>
-  </header>
+  </section>
 
-  <section id="about" class="section">
+  <section class="content-section">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-content" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 2rem; flex-direction: row;">
-        <div class="profile-image profile-image-rect">
-          <img src="Sahana_Salesforce_Pic.JPG" alt="Sahana Hariharan" style="width: 340px; height: 420px; object-fit: cover; border-radius: 12px;" />
-        </div>
-        <div class="about-text" style="flex: 2; min-width: 250px;">
-          <p class="about-text" style="font-size: 1.0rem; line-height: 1.6; color: #fffcfc; margin-bottom: 2rem;">Hello! I'm Sahana, a Computer Science and Statistics student at the University of Illinois at Urbana-Champaign. I'm passionate about leveraging technology and data to solve complex problems and drive innovation. My interests include machine learning, software engineering, data analytics, and business, and I enjoy working on projects that combine these areas to create meaningful insights and solutions. 
-            I love trying new foods, going on hikes, curating my Pinterest boards, and cheffing it up with my friends! 
-          </p>
-          <div class="about-collage-carousel" style="margin: 2rem auto 0 auto; max-width: 480px; text-align: center;">
-            <div class="coverflow-carousel" style="position: relative; width: 100%; max-width: 1200px; height: 200px; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
-              <img class="coverflow-img coverflow-img-farleft" src="https://placehold.co/110x110?text=Pic+0" alt="Far Left Pic" style="position: absolute; left: -120px; top: 50px; width: 120px; height: 120px; object-fit: cover; border-radius: 12px; opacity: 0.25; z-index: 0; transform: scale(1); transition: all 0.5s;" />
-              <img class="coverflow-img coverflow-img-left" src="https://placehold.co/150x130?text=Pic+3" alt="Left Pic" style="position: absolute; left: 340px; top: 30px; width: 170px; height: 140px; object-fit: cover; border-radius: 14px; opacity: 0.6; z-index: 1; transform: scale(1.05); transition: all 0.5s;" />
-              <img class="coverflow-img coverflow-img-center" src="https://placehold.co/240x160?text=Pic+1" alt="Center Pic" style="position: absolute; left: 50%; top: 10px; width: 250px; height: 180px; object-fit: cover; border-radius: 16px; z-index: 2; transform: translateX(-50%) scale(1.13); box-shadow: 0 8px 32px rgba(0,0,0,0.18); transition: all 0.5s;" />
-              <img class="coverflow-img coverflow-img-right" src="https://placehold.co/150x130?text=Pic+2" alt="Right Pic" style="position: absolute; right: 340px; top: 30px; width: 170px; height: 140px; object-fit: cover; border-radius: 14px; opacity: 0.6; z-index: 1; transform: scale(1.05); transition: all 0.5s;" />
-              <img class="coverflow-img coverflow-img-farright" src="https://placehold.co/110x110?text=Pic+4" alt="Far Right Pic" style="position: absolute; right: -120px; top: 50px; width: 120px; height: 120px; object-fit: cover; border-radius: 12px; opacity: 0.25; z-index: 0; transform: scale(1); transition: all 0.5s;" />
-              <button class="coverflow-btn coverflow-btn-left" style="position:absolute;top:50%;left:0;transform:translateY(-50%);background:rgba(0,0,0,0.3);border:none;color:#fff;font-size:1.5rem;border-radius:50%;width:32px;height:32px;cursor:pointer;z-index:3;">&#8592;</button>
-              <button class="coverflow-btn coverflow-btn-right" style="position:absolute;top:50%;right:0;transform:translateY(-50%);background:rgba(0,0,0,0.3);border:none;color:#fff;font-size:1.5rem;border-radius:50%;width:32px;height:32px;cursor:pointer;z-index:3;">&#8594;</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="skills-bar skills-bar-horizontal">
-        <div class="skills-headline" style="width: 100%; text-align: center; font-size: 1.7rem; font-weight: 800; color: #fff; margin-bottom: 1.2rem; letter-spacing: 0.07em; text-transform: uppercase; text-shadow: 0 2px 12px #ffd70055, 0 0 2px #000;">Skills & Technologies</div>
-        <span class="skill-tag" data-skill="Python">Python</span>
-        <span class="skill-tag" data-skill="JavaScript">JavaScript</span>
-        <span class="skill-tag" data-skill="Data Analysis">Data Analysis</span>
-        <span class="skill-tag" data-skill="Machine Learning">Machine Learning</span>
-        <span class="skill-tag" data-skill="Java">Java</span>
-        <span class="skill-tag" data-skill="C/C++">C/C++</span>
-        <span class="skill-tag" data-skill="Power BI">Power BI</span>
-        <span class="skill-tag" data-skill="SAP">SAP</span>
-        <span class="skill-tag" data-skill="Flask">Flask</span>
-        <span class="skill-tag" data-skill="SQL">SQL</span>
-        <span class="skill-tag" data-skill="HTML/CSS">HTML/CSS</span>
-        <span class="skill-tag" data-skill="React">React</span>
-        <span class="skill-tag" data-skill="Node.js">Node.js</span>
-        <span class="skill-tag" data-skill="Git">Git</span>
-        <span class="skill-tag" data-skill="Docker">Docker</span>
-        <span class="skill-tag" data-skill="PowerPoint">PowerPoint</span>
-        <span class="skill-tag" data-skill="Excel">Excel</span>
-        <span class="skill-tag" data-skill="Databricks">Databricks</span>
-        <span class="skill-tag" data-skill="PySpark">PySpark</span>
-        <span class="skill-tag" data-skill="Pandas">Pandas</span>
-        <span class="skill-tag" data-skill="RestAPIs">REST APIs</span>
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="section-divider"></div>
+      <div class="skills-grid">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Data Analysis</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">C/C++</span>
+        <span class="skill-tag">Power BI</span>
+        <span class="skill-tag">SAP</span>
+        <span class="skill-tag">Flask</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">HTML/CSS</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">PowerPoint</span>
+        <span class="skill-tag">Excel</span>
+        <span class="skill-tag">Databricks</span>
+        <span class="skill-tag">PySpark</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">REST APIs</span>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card" data-tilt>
-          <div class="project-content">
-            <img src="globe-image.jpg" alt="Border Cross Game" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1.2rem;" />
-            <h3>Border Cross</h3>
-            <p class="project-description">A daily geography puzzle game where players navigate from a starting country to a target country by only naming countries that share a physical land border. Inspired by my new love for geography and obsession with games like Globle. </p>
-            <div class="project-technologies"><strong>Technologies:</strong> React, Vite, TailwindCSS, react-simple-maps, TopoJSON, gh-pages (for deployment)</div>
-            <div class="project-links" style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.3rem;">
-              <a href="https://sahana-h.github.io/border-cross/" class="project-link" title="Play Game" target="_blank" rel="noopener"><i class="fas fa-gamepad"></i> Play Game</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-tilt>
-          <div class="project-content">
-            <img src="https://placehold.co/600x400?text=Simulation-Based+Inference" alt="URES Simulation-based Inference" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1.2rem;" />
-            <h3>Simulation-based Inference (URES)</h3>
-            <p class="project-description">Undergraduate research (URES) supervised by Prof. Yuexi Wang applying rejection Approximate Bayesian Computation (ABC) and Neural Posterior Estimation (NPE) to a simulated Lotka–Volterra dataset and a stock volatility example, comparing method performance and robustness across datasets. </p>
-            <div class="project-technologies"><strong>Technologies:</strong> Python, Neural Posterial Estimation, Reject ABC</div>
-            <div class="project-links" style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.3rem;">
-              <a href="https://drive.google.com/drive/folders/1JEhnvO45wmoU0R_aOCudJ-0UNm1DFivh?usp=sharing" class="project-link" title="View Project" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> View Project</a>
-              <a href="https://docs.google.com/presentation/d/1dZ8ixKH1151uZl0Qqj7zQxyb41cHkzdHwssHNTeDG58/edit?usp=sharing" class="project-link" title="View Presentation" target="_blank" rel="noopener"><i class="fas fa-file-powerpoint"></i> View Presentation</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-tilt>
-          <div class="project-content">
-            <img src="https://raw.githubusercontent.com/sonikatam/ReelIt/main/logo.png" alt="Reel It Logo" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1.2rem;" />
-            <h3>Reel It</h3>
-            <span class="status-badge status-in-progress">In Progress</span>
-            <p class="project-description">A mobile app for rating and sharing movies with friends, inspired by Beli but for movies.</p>
-            <div class="project-technologies"><strong>Technologies:</strong> Expo, React Native, TypeScript, Supabase</div>
-            <div class="project-links" style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.3rem;">
-              <a href="https://github.com/sonikatam/ReelIt" class="project-link" title="View on GitHub" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> View Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-tilt>
-          <div class="project-content">
-            <img src="quant-dash-pic.png" alt="Quant-Dash Project" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1.2rem;" />
-            <h3>Quant-Dash: Quantitative Trading Dashboard</h3>
-            <p class="project-description">An interactive Streamlit dashboard for quantitative trading analysis, featuring real-time market data visualization, strategy backtesting, and portfolio performance metrics.</p>
-            <div class="project-technologies"><strong>Technologies:</strong> Pandas, Plotly, Render, YFinance API, Streamlit</div>
-            <div class="project-links" style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.3rem;">
-              <a href="https://github.com/sahana-h/quant-dash" class="project-link" title="View on GitHub" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> View Project</a>
-              <a href="https://quant-dash-hrrshsf2afnu7tpurjyaxh.streamlit.app/" class="project-link" title="View Demo" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> View Demo</a>
-              
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-tilt>
-          <div class="project-content">
-            <img src="stock_market_pic.jpeg" alt="RetailRadar Project" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1.2rem;" />
-            <h3>RetailRadar: Reddit Stock Sentiment Analysis</h3>
-            <p class="project-description">An interactive web dashboard that analyzes Reddit posts to uncover real-time sentiment trends around publicly traded stocks, combining NLP with financial data to visualize retail investor opinion.</p>
-            <div class="project-technologies"><strong>Technologies:</strong> SQLite, Pandas, FinBERT, PRAW, Cron, Streamlit</div>
-            <div class="project-links" style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.3rem;">
-              <a href="https://github.com/sahana-h/reddit-sentiment-analysis" class="project-link" title="View on GitHub" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> View Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-tilt>
-          <div class="project-content">
-            <img src="ChicagoCrimePic.png" alt="Chicago Crime Analysis Screenshot" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1.2rem;" />
-            <h3>Predictive Crime Analysis</h3>
-            <p class="project-description">Developed a machine learning model to predict crime hotspots in Chicago using historical data paired with LSTM and RandomForest models as part of research at altREU Teuscher Lab. </p>
-            <div class="project-technologies"><strong>Technologies:</strong> Python, Pandas, Flask, TensorFlow</div>
-            <div class="project-links" style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.3rem;">
-              <a href="https://github.com/cia161/ChicagoCrimePrediction" class="project-link" title="View on GitHub" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> View Project</a>
-              <a href="Predictive_Crime_Analysis_and_Visualization_in_Chicago.pdf" class="project-link" title="View Publication" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> View Publication</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-tilt>
-          <div class="project-content">
-            <img src="search_and_rescue_robot.JPG" alt="Search and Rescue Robot" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1.2rem;" />
-            <h3>Search & Rescue</h3>
-            <p class="project-description">Developed a robot using sensors, cameras, and a RaspberryPi that navigates obstacles and identifies objects and humans as part of the John Deere-sponsored HackIllinois 2024 Hackathon. </p>
-            <div class="project-technologies"><strong>Technologies:</strong> Python, OpenCV, RaspberryPi, TensorFlow, VNC Viewer</div>
-            <div class="project-links" style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.3rem;">
-              <a href="https://github.com/sahana-h/SearchAndRescueHackIllinois" class="project-link" title="View Project" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> View Project</a>
-              <a href="https://docs.google.com/presentation/d/1zmKpC3Wca_RJdpwPMJYOmAh6iVj9D3MwS_3IVvlMgBE/edit?slide=id.ge4e7c5a600_0_709#slide=id.ge4e7c5a600_0_709" class="project-link" title="View Demo" target="_blank" rel="noopener"><i class="fas fa-video"></i> View Demo</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-tilt>
-          <div class="project-content">
-            <img src="prognosis_intern_pic.jpg" alt="Prognosis Internship Project" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1.2rem;" />
-            <h3>Patient Similarity Matching</h3>
-            <p class="project-description">Generated meaningful patient knowledge graphs using OpenAI and Node2Vec embeddings to enable AI-driven predictions of diseases and treatments as part of my internship at Prognosis. </p>
-            <div class="project-technologies"><strong>Technologies:</strong> Neo4J, NextJS, Node2Vec, OpenAI (API), JavaScript, Python</div>
-            <div class="project-links" style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.3rem;">
-              <a href="https://github.com/rssm4/rssm-backend" class="project-link" title="View Project" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> View Project</a>
-              <a href="Patient_Similarity_Matching_Doc.pdf" class="project-link" title="View Publication" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> View Publication</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-tilt>
-          <div class="project-content">
-            <img src="deepfake_pic.jpg" alt="Deepfake Pic" style="width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1.2rem;" />
-            <h3>Deepfake Detection</h3>
-            <p class="project-description">Designed and implemented an XceptionNet + Transfer Learninghybrid model to detect deepfakes in image and video content.</p>
-            <div class="project-technologies"><strong>Technologies:</strong> XceptionNet, Transfer Learning, Yunet Face Zoom, ViT</div>
-            <div class="project-links">
-              <a href="https://github.com/jain18ayush/deepfake-encode/tree/advayk2" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i> View Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="hobbies" class="section">
-    <div class="container hobbies-container">
-      <h2 class="section-title">Hobbies & Interests</h2>
-      <div class="hobbies-content" style="display: flex; flex-wrap: wrap; gap: 2.5rem; align-items: stretch; justify-content: center; width: 100%;">
-        <a href="https://www.instagram.com/sahanacreates/" target="_blank" style="text-decoration:none; color:inherit;">
-          <div class="hobby-block" data-tilt style="flex:1 1 340px; min-width: 280px; max-width: 420px; background: rgba(255,255,255,0.06); border-radius: 18px; display: flex; flex-direction: column; align-items: center; padding: 2.5rem 1.2rem; box-sizing: border-box; cursor: pointer;">
-            <img src="art_pic.jpg" alt="Art" style="width: 100%; max-width: 340px; height: 420px; object-fit: cover; border-radius: 18px; margin: 0 auto 2rem auto; display: block;" />
-            <div class="hobby-blurb" style="margin-top: 1rem; color: #fff; font-size: 1.08rem; background: rgba(255,255,255,0.07); border-radius: 10px; padding: 1.1rem 1rem 0.7rem 1rem; width: 100%; text-align: center;">
-              Art has been a lifelong passion of mine - over the years, I've competed in multiple art competitions and continue to explore different styles and mediums, with gouache being my current favorite.  <br>Feel free to check out my art instagram: <span style="color:#ffd700; text-decoration:underline;">@sahanacreates</span>
-            </div>
-          </div>
-        </a>
-        <div class="hobby-block" data-tilt style="flex:1 1 340px; min-width: 280px; max-width: 420px; background: rgba(255,255,255,0.06); border-radius: 18px; display: flex; flex-direction: column; align-items: center; padding: 2.5rem 1.2rem; box-sizing: border-box;">
-          <img src="dance_pic.jpg" alt="Dance" style="width: 100%; max-width: 340px; height: 420px; object-fit: cover; border-radius: 18px; margin: 0 auto 2rem auto; display: block;" />
-          <div class="hobby-blurb" style="margin-top: 1rem; color: #fff; font-size: 1.08rem; background: rgba(255,255,255,0.07); border-radius: 10px; padding: 1.1rem 1rem 0.7rem 1rem; width: 100%; text-align: center;">
-            I have been training in Bharathanatyam (Indian Classical Dance) since I was 6 years old, and have performed at multiple venues in the Bay Area. I performed my arangetram (solo debut) in June 2023, and continue to pursue my passion for dance. 
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-content">
-        <p style="text-align:center; color:#fff; font-size:1.15rem; margin-bottom:1.5rem;">Feel free to reach out to me at <a href="mailto:sahanahariharan@gmail.com" style="color:#ffd700; text-decoration:underline;">sahanahariharan@gmail.com</a></p>
-        <div class="social-links">
-          <a href="mailto:sahanahariharan@gmail.com" class="social-link" data-tooltip="Email"><i class="fas fa-envelope"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
